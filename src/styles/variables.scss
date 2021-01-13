@@ -1,0 +1,20 @@
+$grey-900: #070e27;
+$grey-800: #081131;
+$grey-700: #162044;
+$grey-600: #4e5a85;
+$grey-500: #7e8bb6;
+$grey-300: #ccd2e9;
+$grey-200: #f4f7ff;
+
+$blue-900: #001a57;
+$blue-800: #00308f;
+$blue-600: #0059f7;
+$blue-300: #689eff;
+$blue-100: #0059f7;
+
+$breakpoints: (
+  "small-mobile": 375px,
+  "mobile": 767px,
+  "tablet": 992px,
+  "desktop": 1280px,
+) !default;
