@@ -1,0 +1,32 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+.root {
+  background-color: $grey-900;
+  border-bottom: 1px solid $grey-600;
+  height: 104px;
+  display: flex;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  @include breakpoint("mobile") {
+    padding: 0px 80px;
+  }
+}
+.button {
+  border: none;
+  height: 56px;
+  width: 94px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: $grey-700;
+  color: white;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $grey-600;
+  }
+}
