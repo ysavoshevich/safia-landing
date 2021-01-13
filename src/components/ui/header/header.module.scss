@@ -3,9 +3,12 @@
 .root {
   background-color: $grey-900;
   border-bottom: 1px solid $grey-600;
-  height: 104px;
+  height: 74px;
   display: flex;
   align-items: center;
+  @include breakpoint("desktop") {
+    height: 104px;
+  }
 }
 .container {
   display: flex;
@@ -19,8 +22,8 @@
 }
 .button {
   border: none;
-  height: 56px;
-  width: 94px;
+  height: 46px;
+  width: 84px;
   cursor: pointer;
   border-radius: 8px;
   background-color: $grey-700;
@@ -28,5 +31,9 @@
   transition: background-color 0.3s ease;
   &:hover {
     background-color: $grey-600;
+  }
+  @include breakpoint("desktop") {
+    height: 56px;
+    width: 94px;
   }
 }
