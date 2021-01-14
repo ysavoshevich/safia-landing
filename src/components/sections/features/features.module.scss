@@ -1,0 +1,53 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+.root {
+  background-color: $grey-900;
+}
+.heading {
+  font-weight: bold;
+  color: white;
+  font-size: 34px;
+  line-height: 50px;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  @include breakpoint("mobile") {
+    font-size: 38px;
+    line-height: 60px;
+  }
+  @include breakpoint("tablet") {
+    text-align: left;
+    font-size: 42px;
+    line-height: 70px;
+    padding: 96px 0px 16px 0px;
+  }
+  @include breakpoint("desktop") {
+    font-size: 48px;
+    line-height: 80px;
+  }
+}
+.subheading {
+  color: $grey-500;
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 32px;
+  text-align: center;
+  padding: 0px 20px 30px 20px;
+  @include breakpoint("tablet") {
+    padding: 0px 380px 32px 0px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  @include breakpoint("desktop") {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+.features {
+  display: grid;
+
+  @include breakpoint("mobile") {
+    column-gap: 40px;
+    grid-template-columns: 48% 48%;
+  }
+}
