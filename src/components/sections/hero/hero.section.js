@@ -6,7 +6,6 @@ import Amazon from "~/assets/images/amazon.svg"
 import Netflix from "~/assets/images/netflix.svg"
 import Slack from "~/assets/images/slack.svg"
 import Zoom from "~/assets/images/zoom.svg"
-import classNames from "classnames"
 
 export default function HeroSection() {
   return (

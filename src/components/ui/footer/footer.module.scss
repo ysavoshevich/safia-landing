@@ -1,0 +1,62 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+.root {
+  background-color: $grey-700;
+  color: $grey-300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include breakpoint("tablet") {
+    height: 120px;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  @include breakpoint("tablet") {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.icons {
+  margin-top: 25px;
+  @include breakpoint("tablet") {
+    margin-top: 0px;
+  }
+}
+.icon {
+  margin: 0px 20px;
+  &:hover svg path {
+    fill: white;
+  }
+  &:first-of-type {
+    margin-left: 0px;
+  }
+  &:last-of-type {
+    margin-right: 0px;
+  }
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  @include breakpoint("tablet") {
+    flex-direction: row;
+  }
+}
+.link {
+  margin: 10px 0px;
+  transition: color 0.2s ease;
+  &:hover {
+    color: white;
+  }
+  @include breakpoint("tablet") {
+    margin: 0px 12px;
+  }
+}

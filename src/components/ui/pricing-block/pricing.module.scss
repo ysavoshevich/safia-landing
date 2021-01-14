@@ -1,0 +1,47 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+.root {
+  background-color: $grey-800;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 20px 0px;
+  @include breakpoint("desktop") {
+    width: 400px;
+    padding: 50px;
+    margin: 0px;
+  }
+}
+.active {
+  background-color: $grey-700;
+
+  @include breakpoint("tablet") {
+    transform: translateY(-80px);
+  }
+}
+.plan {
+  font-size: 20px;
+  line-height: 32px;
+  color: $grey-500;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+.price {
+  padding-bottom: 50px;
+  border-bottom: 1px solid $grey-600;
+}
+.sign {
+  color: $grey-500;
+  text-transform: uppercase;
+  font-size: 56px;
+  line-height: 64px;
+}
+.number {
+  color: white;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 56px;
+  line-height: 64px;
+}
+.bulletPoints {
+  padding: 50px 0px;
+}

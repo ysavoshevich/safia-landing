@@ -1,0 +1,36 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+.button {
+  border: none;
+  background-color: $blue-300;
+  width: 148px;
+  height: 54px;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    svg {
+      transform: translateX(10px);
+    }
+  }
+  svg {
+    transition: transform 0.25s ease;
+    transform: translateX(5px);
+  }
+  @include breakpoint("tablet") {
+    width: 178px;
+    height: 64px;
+  }
+}
+.blue {
+  background-color: $blue-600;
+}
+.grey {
+  background-color: $grey-600;
+}

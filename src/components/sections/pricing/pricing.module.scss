@@ -1,0 +1,51 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+.root {
+  padding: 50px 0px 50px 0px;
+  @include breakpoint("tablet") {
+    padding: 150px 0px 50px 0px;
+  }
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    color: white;
+    font-size: 22px;
+    line-height: 54px;
+    padding-bottom: 46px;
+    @include breakpoint("small-mobile") {
+      font-size: 32px;
+      line-height: 64px;
+      padding-bottom: 56px;
+    }
+    @include breakpoint("tablet") {
+      font-size: 48px;
+      line-height: 64px;
+      padding-bottom: 196px;
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    color: $grey-500;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    @include breakpoint("tablet") {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+}
+.prices {
+  display: flex;
+  flex-direction: column;
+  @include breakpoint("tablet") {
+    font-size: 20px;
+    line-height: 32px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
