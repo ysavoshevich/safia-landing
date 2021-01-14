@@ -30,6 +30,9 @@
 }
 .icon {
   margin: 0px 20px;
+  &:hover svg path {
+    fill: white;
+  }
   &:first-of-type {
     margin-left: 0px;
   }
@@ -49,6 +52,10 @@
 }
 .link {
   margin: 10px 0px;
+  transition: color 0.2s ease;
+  &:hover {
+    color: white;
+  }
   @include breakpoint("tablet") {
     margin: 0px 12px;
   }
