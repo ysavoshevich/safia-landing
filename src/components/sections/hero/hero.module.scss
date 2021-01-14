@@ -2,6 +2,7 @@
 @import "src/styles/mixins";
 .root {
   background-color: $grey-900;
+  border-bottom: 1px solid $grey-600;
   h1 {
     font-weight: bold;
     color: white;
